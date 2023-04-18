@@ -1,0 +1,2 @@
+insert into external_employee (id, first_name, last_name, email, gender, department, position, salary, ssn) values (1, 'Isaiah', 'Badini', 'ibadini0@shinystat.com', 'MALE', 'Sales', 'Business Systems Development Analyst', '$182739.52', '678-84-6917');
+insert into external_employee_address (id, street, city, `state`, zip_code, external_employee_id) values (1, '549 Van Buren St', 'Herndon', 'VA', '20170', 1);

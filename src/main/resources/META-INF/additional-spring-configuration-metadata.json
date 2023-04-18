@@ -1,0 +1,9 @@
+{"properties": [{
+  "name": "spring.security.oauth2.resourceserver.opaque-token.user-info-uri",
+  "type": "java.lang.String",
+  "description": "A description for 'spring.security.oauth2.resourceserver.opaque-token.user-info-uri'"
+}]}{"properties": [{
+  "name": "employee.feign.client.url",
+  "type": "java.lang.String",
+  "description": "A description for 'employee.feign.client.url'"
+}]}

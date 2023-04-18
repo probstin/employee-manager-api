@@ -1,0 +1,28 @@
+spring:
+    datasource:
+        url: jdbc:h2:mem:employee-manager-db
+    data:
+        jpa:
+            repositories:
+                bootstrap-mode: default
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        show-sql: true
+        defer-datasource-initialization: true
+    h2:
+        console:
+            enabled: true
+            path: /h2
+    security:
+        oauth2:
+            resourceserver:
+                opaque-token:
+                    user-info-uri: https://dev-77716773.okta.com/oauth2/default/v1/userinfo
+                    introspection-uri: https://dev-77716773.okta.com/oauth2/default/v1/introspect
+                    client-id: 0oa8xc8lpmaf87VLD5d7
+                    client-secret:
+
+employee:
+    feign:
+        client:
+            url: http://localhost:8080/api/v1/external/employees
